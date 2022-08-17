@@ -1,0 +1,114 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    color: white;
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1599090724927-e7745deeeb94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JleSUyMHdhbGx8ZW58MHx8MHx8&w=1000&q=80);}
+
+header{
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+     
+}
+
+
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header li{
+    display: inline-block;
+    font-family: 'Yeseva One', cursive;
+}
+
+header li a{
+    list-style: none;
+    color: rgb(133, 8, 145);
+    text-decoration: none;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 7px;
+    border: 1px solid rgb(133, 8, 145);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+header li a:hover{
+    background-color:rgb(133, 8, 145);
+    box-shadow: 0px 0px 10px 4px rgb(255, 255, 255);
+    border-radius: 15px;
+    color: white;}
+
+    section{
+        margin-top: 100px;
+        height: 80vh;
+    }
+
+    input{
+        color: black;
+    }
+
+    textarea{
+        color: black;
+    }
+
+    .enviar{
+        list-style: none;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 8px;
+        margin: 8px;
+        border-radius: 7px;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(133, 8, 145);
+        transition: all 0.5s;
+    }
+    
+    .enviar:hover{
+        box-shadow: 0px 0px 10px 4px rgb(255, 255, 255);
+        border-radius: 15px;
+    }
+
+    footer{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .redes{
+        display: flex;
+    }
+    
+    .redes a{
+        width: 50px;
+        margin-left: 30px;
+    }
+    
+    .redes img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .copyright{
+        margin-left: 20px;
+    }

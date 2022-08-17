@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-agenda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Edu+VIC+WA+NT+Beginner:wght@600;700&family=Monoton&family=Sonsie+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <title>Agenda</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <section>
+        <form>
+            <fieldset>
+                <legend class="descripcion">Agenda tu clase</legend>
+                <ul>
+                    <li>
+                        <label for="name" class="descripcion">Nombre:</label> <br>
+                        <input type="text" id="name" name="name">
+                    </li>
+             <br>
+            <li>
+                <label for="apellido" class="descripcion">Apellido:</label> <br>
+                <input type="text" id="name" name="name">
+            </li>                  
+             <br>
+             <li>
+                <div class="descripcion">Sexo:</div>
+                <input type="radio" name="sexo" value="masculino">
+                    <label for="sexo" class="descripcion">Masculino:</label>
+                    <br>
+                    <input type="radio" name="sexo" value="femenino">
+                    <label for="sexo" class="descripcion">Femenino:</label>
+                    
+            </li> 
+            <br>
+                <li>
+                    <label for="name" class="descripcion">Selecciona el dia:</label> <br>
+                    <select name="Dia">
+                        <option value="Lunes">Lunes</option>
+                        <option value="Martes">Martes</option>
+                        <option value="Miercoles">Miercoles</option>
+                        <option value="Jueves">Jueves</option>
+                        <option value="Viernes">Viernes</option>
+                    </select>
+                    
+                </li>
+                <br>
+                <li>
+                    <label for="name" class="descripcion">Selecciona la clase:</label> <br>
+                    <select name="Dia">
+                        <option value="Natacion">Natacion</option>
+                        <option value="Sala">Sala de musculacion</option>
+                        <option value="Spinning">Spinning</option>
+                        <option value="Artes-marciales">Artes marciales</option>
+                    </select>
+                    
+                </li>
+            </ul>
+
+                <input class="agendar" type="submit" value="Agendar">
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <div class="redes">
+        <a href=""><img src="./imagenes/Facebook_icon.svg.png" alt=""></a>
+        <a href=""><img src="./imagenes/Instagram_logo_2022.svg" alt=""></a>
+        <a href=""><img src="./imagenes/Twitter-logo.svg.png" alt=""></a>
+        </div>
+        <div class="copyright">
+            Esta pagina es propiedad de Kevin Krusche
+            copyright &copy;
+        </div>
+    </footer>
+</body>
+</html>

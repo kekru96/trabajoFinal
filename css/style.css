@@ -1,0 +1,384 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+body{
+    background-image: url(https://wallpapercave.com/wp/wp2789637.jpg);
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+        "section"
+        "section"
+        "section"
+        "main"
+        "main"
+        "main"
+        "aside"
+        "aside"
+        "aside"
+        "aside"
+        "aside"
+        "footer";
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+     
+}
+
+
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header li{
+    display: inline-block;
+    font-family: 'Yeseva One', cursive;
+}
+
+header li a{
+    list-style: none;
+    color: rgb(133, 8, 145);
+    text-decoration: none;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 7px;
+    border: 1px solid rgb(133, 8, 145);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
+
+}
+
+header li a:hover{
+    background-color:rgb(133, 8, 145);
+    box-shadow: 0px 0px 10px 4px rgb(255, 255, 255);
+    border-radius: 15px;
+    color: white;
+}
+
+section{
+    grid-area: section;
+    background-image: url(https://www.actualfit24.es/imagenes/portadas/5_Slide_AFIT24_Soria.jpg);
+    background-repeat: round;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+.titulo{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 50px rgb(231, 5, 252), 1px 1px 50px rgb(167, 111, 157);
+    font-size: 7em;
+    font-family: 'Caesar Dressing', cursive;
+}
+
+.img-section{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-section img{
+    filter: drop-shadow(0 0 5px rgb(231, 5, 252));
+}
+
+main{
+    grid-area: main;
+    height: 100%;
+}
+
+
+.contenedor{
+    display: flex;    
+    
+    
+}
+
+.contenedor-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-img img{
+    height: 80%;
+}
+
+
+
+.slogan{
+    color:rgb(116, 6, 126) ;
+    text-shadow: 1px 1px 10px rgb(230, 217, 231);
+    align-self: center;
+    font-size: 100px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+
+.contenedor-texto{
+    color: white;
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'Yeseva One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.entrenar{
+    padding: 0;
+    margin: 0;
+    color:rgb(116, 6, 126) ;
+}
+
+aside{
+    grid-area: aside;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.titulo-tarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 50px rgb(231, 5, 252), 1px 1px 50px rgb(167, 111, 157);
+    font-size: 80px;
+    font-family: 'Yeseva One', cursive;
+    margin: 120px;
+}
+
+.contenedor-tarjeta{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: white;
+    width: 100%;
+    font-size: 30px;
+}
+
+.contenedorGaleria{
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.galeriaFotos{
+    margin: auto;
+    width: 70%;
+    height: 100%;
+}
+
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider li{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    list-style: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.slider li:first-child{
+    opacity: 1;
+}
+
+.slider li:target{
+    opacity: 1;
+}
+
+.slider li img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.seleccionador{
+    margin-top: 50px;
+}
+
+.seleccionador ul{
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.seleccionador ul li{
+    list-style: none;
+}
+
+.seleccionador li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    padding-right: 15px;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.seleccionador li a:hover{
+    background-color: rgb(231, 5, 252);
+}
+
+
+
+
+footer{
+    grid-area: footer;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.redes{
+    display: flex;
+}
+
+.redes a{
+    width: 50px;
+    margin-left: 30px;
+}
+
+.redes img{
+    width: 100%;
+    height: 100%;
+}
+
+.copyright{
+    margin-left: 20px;
+    
+}
+
+@media only screen and (max-width: 550px){
+  body{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: 
+        "section"
+        "section"
+        "section"
+        "main"
+        "main"
+        "main"
+        "aside"
+        "aside"
+        "aside"
+        "footer";
+  }  
+
+  header li a {
+    font-size: 10px;
+}
+
+.titulo h1{
+    font-size: 3rem;
+}
+
+
+.slogan{
+    font-size: 35px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    height: 800px;
+    
+    
+}
+
+.contenedor-texto{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+
+.contenedor-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-tarjeta{
+    font-size: 30px;
+
+}
+
+.contenedor-tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.galeriaFotos{
+    width: 50%;
+    height: 70%;
+}
+
+.img-section{
+    width: 40%;
+}
+
+.img-section img{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+}
